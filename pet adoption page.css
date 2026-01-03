@@ -1,0 +1,65 @@
+a{
+    color:goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span{
+    color: goldenrod;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main>section{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+main>section:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px 5px rgb(218, 165, 32,0.5),-5px -5px 5px 5px rgb(218, 165, 32,0.5);
+}
+
+@media (max-width: 300px) {
+    main>section {
+        height: 100px;
+        overflow-y: auto;  /*adds scroll*/
+    }
+}
+
+footer{
+    margin: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto; */
+}
+
+/* textarea{
+    grid-area: 1/2/2/3;
+}
+
+label{
+    grid-area: 1/1/2/2;
+}
+footer>p{
+    grid-row-start: 2;
+} */

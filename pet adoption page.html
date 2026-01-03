@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption</title>
+    <!-- <link rel="stylesheet" href="pet adoption page.css"> -->
+
+    <style>
+        a{
+    color:goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span{
+    color: goldenrod;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main>section{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+main>section:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px 5px rgb(218, 165, 32,0.5),-5px -5px 5px 5px rgb(218, 165, 32,0.5);
+}
+
+@media (max-width: 300px) {
+    main>section {
+        height: 100px;
+        overflow-y: auto;  /*adds scroll*/
+    }
+}
+
+footer{
+    margin: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <a href="adoptme.com">adoptme.com</a>
+    <header><h1>Adopt a <span>Pet</span> Today</h1></header>
+    <main>
+        <section>
+            <img alt="Jerry" src="dog.jpg" id="dog">
+            <h3>Meet Jerry</h3>
+            <p>Meet Jerry, a sweet and playful pup ready to find his forever home! With his wagging tail and gentle eyes, Jerry brings joy to everyone he meets. He loves belly rubs, long walks, and cuddling up after a fun day of play. Jerry is friendly with both people and other pets, making him a perfect companion for any family. Give Jerry the loving home he deserves—you'll gain a loyal friend for life!</p>
+        </section>
+        <section>
+            <img alt="Tom" src="cat.jpg" id="cat">
+            <h3>Meet Tom</h3>
+            <p>Meet Tom, a charming and affectionate cat looking for his forever home! With his soft fur and soothing purrs, Tom is the perfect cuddle buddy. He enjoys lounging in sunny spots, gentle head scratches, and the occasional playful pounce. Tom is calm, friendly, and gets along well with people and other pets. Bring Tom home and add a little more love—and a lot more purring—to your life!</p>
+        </section>
+    </main>
+    <footer>
+        <label for=f_s>Feedbacks and suggestions...</label><br>
+        <textarea name="f_s" id="f_s" placeholder="Feedbacks and suggestions..."></textarea>    
+        <p><span>Contact Us:</span> 98258163618</p>
+        <p><span>Email:</span> adoptmetoday@gmail.com</p>
+    </footer>
+</body>
+</html>
